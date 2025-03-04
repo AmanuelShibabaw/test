@@ -1,0 +1,482 @@
+body{
+    height: ;
+}
+.all-div-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,350px);
+    background-color: rgb(37, 115, 183);
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.movie-container-admin{
+    cursor: context-menu;
+    position: relative;
+    z-index: 1;
+    top: 70px;
+    width: 350px;
+    background-color: whitesmoke;
+    height: 700px;
+    display: grid;
+    border-radius: 15px;
+    transition: 0.5s;
+    box-shadow: 1px 2px 3px rgb(0, 0, 0);
+}
+.image-admin img{
+    object-fit: cover;
+    cursor: pointer;
+    border-top-left-radius:15px ;
+    border-top-right-radius:15px ;
+    width: 350px;
+    transition: 0.5s;
+}
+.movie-container-admin:hover{
+    top: 60px;
+}
+.image-admin{
+    background-size: cover;
+    background-repeat: none;
+    overflow: hidden;
+}
+.buttons{
+  display: flex;
+  height: 70px;
+  gap: 100px;
+  justify-content: center;
+  align-items: center;
+  background-color: ;
+  margin-top: 70px;
+}
+.edit-button{
+    cursor: pointer;
+    width: 80px;
+    height: 30px;
+    font-size: 17px;
+    background-color: lightseagreen;
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+.delete-button{
+    cursor: pointer;
+    width: 80px;
+    height: 30px;
+    font-size: 17px;
+    background-color: rgb(222, 112, 28);
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+.dec-admin{
+    cursor: context-menu;
+    border: none;
+    background-color: white;
+    
+    width: 310px;
+    padding:10px;
+    margin-left: 5px;
+    margin-top: 10px;
+    font-size: 16px;
+    border-radius: 10px;
+    display: grid;
+    gap: 10px;
+    padding-left: 19px;
+    transition: 0.3s ease-in-out;
+}
+.o{
+    background-color: white;
+    margin-left: px;
+    margin-bottom: 150px;
+    margin-top: 70px;
+    width: 300px;
+    height: 350px;
+    background: ;
+    box-shadow: 0px 0px 2px purple;
+    border-radius: 15px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    transition: 0.75s ease;
+}
+.m{
+    margin-left: 100px;
+    position: relative;
+    width: 80px;
+    bottom:90px ;
+    background-color: ;
+}
+.m img{
+    width: 80px;
+    clip-path: circle();
+    transition: 0.75s ease;
+}
+.dec-admin:hover{
+    font-weight: bold;
+    color: rgb(7, 7, 8);
+    transition: 0.3s ease-in-out;
+}
+.movie-container-admin:hover .image-admin img{
+   
+
+} 
+.o:hover{
+    height: 480px;
+    transition: 0.75s ease;
+}
+.o:hover .m img{
+    margin-top: 50px;
+    clip-path: circle(10);
+    width: 100px;
+    border-radius: 15px;
+    transition: 0.75s ease-in-out;
+}
+.di{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    background-color: bisque;
+    margin-bottom: -44px;
+    position: relative;
+    bottom: -24px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    transition: 0.75s ease-in-out;
+    opacity: 0;
+    height: auto;
+}
+.o:hover .di{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(41, 39, 39);
+    opacity: 0.5;
+    position: relative;
+    height: auto;
+    transition: 0.75s ease-in-out;
+    color: white;
+}
+.di p{
+    padding-left: 15px;
+    transition: 0.75s ease-in-out;
+}
+.he{
+    height: 350px;
+    width: 100%vh;
+    background-image: url('admin images/homepage.png');
+    overflow: hidden;
+    margin-bottom: 40px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    border-radius: 15px;
+    background-attachment: fixed;
+}
+.he img{
+    object-fit: cover;
+}
+.developer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 350px); 
+    width: 100%vh;
+    margin-top: 150px;
+    margin-left: 35px;
+    margin-right: 35px;
+    box-shadow: 0px 0px 6px green;
+    height: 150px;
+    justify-content: space-evenly;
+    border-radius: 8px;
+    gap: 157px;
+    align-items: ;
+    padding: 20px;
+}
+.developer-disc {
+    background-color: white;
+    width: 350px;
+    height: 350px;
+    box-shadow: 0px 0px 2px purple;
+    margin-left: 0px;
+    margin-bottom: 150px;
+    margin-top: 70px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    display: flex;
+    flex-direction: column;
+    transition: 0.75s ease-in-out;
+}
+.con{
+margin-left: 40%;
+margin-top: 30px;
+font-size: 20px;
+font-family: Arial, Helvetica, sans-serif;
+pointer-events: none;
+}
+.developer-disc:hover{
+    box-shadow: 0px 0px 6px rgb(19, 8, 229);
+    transition: 0.45s ease-in-out;
+    margin-left: 0px;
+    margin-bottom: 160px;
+    margin-top: 60px;
+    border-top-right-radius: 2px;
+    border-bottom-left-radius: 2px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    animation-name: aman;
+    animation-duration: 1s linear infinite;
+    
+}
+.developer-hap{
+    background-color: white;
+    margin-left: 0px;
+    width: 350px;
+    height: 350px;
+    box-shadow: 0px 0px 2px purple;
+    margin-bottom: 150px;
+    margin-top: 70px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.35s ease-in-out;
+}
+.happy-cli{
+font-size: 16px;
+font-family: Arial, Helvetica, sans-serif;
+pointer-events:none;
+transition: 0.75s ease-in-out;
+}
+.developer-hap:hover .happy-cli{
+ font-size: 25px;
+ transition: 0.75s ease-in-out;
+}
+.developer-hap:hover {
+    border-top-right-radius: 50%;
+    transition: 0.35s ease-in-out;
+    
+}
+footer{
+    position: relative;
+    bottom: -900px;
+    height: 350px;
+    width: 100%vh;
+    background:transparent;
+    box-shadow: 0px 0px 3px green;
+    opacity: ;
+    margin: -10px;
+
+}
+.foo{
+opacity: 1;
+color: red;
+}
+@media (max-width:1521px) {
+ .developer{
+    height: 1600px;
+ }  
+ .he{
+    font-size: 18px;
+ } 
+ .developer-hap,.developer-disc{
+    margin-top: 10px;
+    margin-bottom: 0px;
+ }
+ .o{
+    margin-top: 70px;
+    margin-bottom: 0px;
+ }
+}
+.enteremail{
+    margin-left: 20px;
+    background-color:ed;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 270px;
+}
+.input-email{
+    height: 28px;
+    border: none;
+    box-shadow: 0px 0px 2px rgb(124, 8, 212);
+    border-radius: 5px;
+}
+.input-email::placeholder{
+    padding: 10px;
+}
+.input-email:hover {
+    box-shadow: 0px 0px 2px green;
+}
+.textarea{
+    background-color: d;
+    width: 270px;
+    margin-left: 20px;
+    height: 150px;
+}
+.textarea1{
+    margin-top: 5px;
+    width: 260px;
+    height: 110px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 0px 6px rgb(116, 5, 181);
+}
+.textarea1::placeholder{
+    padding:0px;
+}
+.send-btn button{
+    display: grid;
+    grid-template-columns: 70px 5px;
+    justify-content: center;
+    align-items:center;
+    background-color: ;
+    width: 150px;
+    height: 70px;
+    margin-left: 20px;
+    transition: 0.45s;
+}
+.send-btn button{
+    transition: 0.45s;
+    width: 110px;
+    height: 40px;
+    padding-top: 0px;
+    padding-bottom: 13px;
+    background: linear-gradient(rgb(82, 241, 146),rgb(108, 146, 243));
+    color: white;
+    border-radius: 8px;
+    border: none;
+}
+.send-btn button:hover{
+box-shadow: 0px 0px 3px rgb(16, 64, 16);
+}
+.se{
+    margin-top: 10px;
+    width: 50px;
+    margin-left: -10px;
+    height: 20px;
+    font-size: 16px;
+}
+.ima{
+    margin-top: 30px;
+    width: 30px;
+    height: 20px;
+    color: aqua;
+    margin-left: -19px;
+    margin-top: 6px;
+}
+.send-btn:hover button .ima{
+    transform: rotate(360deg);
+    transition: 0.45s;
+}
+.edit-price{
+    margin-left: 50px;
+    font-size: 16px;
+    margin-top: 5px;
+    width: 280px;
+    height: 29px;
+    display: flex;
+    align-items: center;
+    background-color: ;
+}
+.edit-price input{
+    width: 60px;
+    padding: 5px;
+    border-radius: 5px;
+    border-color: rgb(223, 95, 223);
+    text-align: center;
+}
+.pri{
+    margin-right: 5px;
+}
+.edit-name{
+    font-size: 16px;
+    margin-top: 5px;
+    width: 100vh;
+    height: 29px;
+    display: flex;
+    align-items: center;
+    background-color: ;
+}
+.edit-name input{
+    width:180px;
+    padding: 5px;
+    border-radius: 5px;
+    border-color: rgb(223, 95, 223);
+}
+.name-of-m{
+    height: 25px;
+    margin-right: 5px;
+    padding-left: -10px;
+}
+.edit-name input::placeholder,
+.edit-price input::placeholder{
+    padding:8px;
+    font-size: 14px;
+}
+.save-edited{
+    display: grid;
+    grid-template-columns: 50px 50px;
+    gap: 15px;
+    margin-left: 0px;
+    width: 80px;
+    height: 32px;
+    margin-left:-11px;
+}
+.confirm-abort{
+    display: grid;
+    align-items: center;
+    width: 310px;
+    grid-template-columns: 200px 200px;
+    background-color:;
+}
+.save-edited-data{
+    background-color: rgb(86, 237, 86);
+}
+.cancel-edited-data{
+    background-color: rgb(251, 41, 41);
+}
+.save-edited-data,
+.cancel-edited-data{
+    border: none;
+    border-radius: 50%;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 29px;
+    height: 29px;
+    transition: 0.3s ease-in-out;
+}
+
+.save-edited-data img,
+.cancel-edited-data img{
+    padding: 0px;
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    position: absolute;
+}
+.tool-tip-confirm,.tool-tip-cancel{
+    position: relative;
+    display: none;
+    color: rgb(7, 6, 6);
+    top: 21px;
+    margin-left: 5px;
+    background-color: transparent;
+    transition: 0.3s ease-in-out;
+}
+.save-edited-data:hover .tool-tip-confirm{
+    display: flex;
+    transition: 0.3s ease-in-out;
+}
+.cancel-edited-data:hover .tool-tip-cancel{
+    display: flex;
+    transition: 0.3s ease-in-out;
+}
+
+

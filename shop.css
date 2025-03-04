@@ -1,0 +1,248 @@
+body{
+    padding-bottom: 1000px;
+}
+.header-div{
+    z-index: 100;
+    display: flex;
+    flex-direction: row;
+    height: 70px;
+    width: 100%;
+    background-color: rgb(38, 50, 224);
+    padding: 0px;
+    margin: -8px;
+    align-items: center;
+    position: fixed;
+   justify-content: center;
+}
+.hh{
+    padding: 10px;
+    margin-left: 50px;
+    margin-right: 100px;
+    width: 250px;
+    align-items: center;
+    display: none;
+    animation-name:amanue;
+    animation-duration: 1s;
+    transition: 1s;
+    justify-content: space-between;
+    color: white;
+    font-size: 16px;
+}
+@keyframes amanue{
+    0%{
+        width:0px;
+    }
+    100%{
+        width: 250px;
+    }
+}
+.aman-title{
+    padding: 10px;
+    width: 190px;
+   
+    margin-right: 70px;
+    color: white;
+}
+
+.search-input{
+padding: 10px;
+flex:1;
+max-width: 300px;
+}
+.profile-pic{
+    margin-top: 0px;
+    margin-left: 10px;
+height: 50px;
+clip-path: circle();
+border: 3px solid 
+}
+.inp{
+    text-align: center;
+    border-width: 1px;
+    border-radius: 2px;
+    border-style: solid;
+    border-color: gray;
+    width: 100%;
+    padding: 5px;
+    box-shadow: inset 2px 2px 5px rgb(0,0,0,0.3);
+}
+.inp::placeholder{
+    padding:10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+.pro-pic{
+ width:50px;
+ height: 50px;
+}
+.product{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-items:  center;
+    height: 700px;
+    background-color: ;
+    width: 350px;
+}
+.product-image img{
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    width: 350px;
+    padding-top: 0px;
+}
+.product{
+    margin-right: 15px;
+    border-style:solid ;
+    border-color: gray;
+    border-width: 1px;
+    border-radius: 5px;
+    position: relative;
+    top: 80px;
+    box-shadow: inset 1px 2px 3px rgb(0,0,0,0.5);
+}
+.main-div-container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,350px);
+    margin-bottom: 20px;
+    gap: 40px;
+    justify-content: start;
+}
+.buy-product-button{
+    width: 150px;
+    margin-top: 50px;
+    background-color: ;
+    display: flex;
+    justify-content: center;
+    height: 40px;
+}
+.buy{
+border: none;
+background-color: blue;
+width: 170px;
+border-radius: 8px;
+color: white;
+transition: 1s;
+}
+.buy:hover{
+background-color: orange;
+}
+.buy:active{
+    background-color: green;
+}
+.product-description{
+    font-weight: bold;
+    display: flex;
+    margin-left: 0px;
+}
+.main-order-div-container{
+    margin-top: 30px;
+    display: flex;
+    width: 400px;
+    height: 300px;
+    background-color: whitesmoke;
+    border-radius: 8px;
+    gap: 15px;
+}
+.main-order-div-container1{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,430px);
+    margin-top: 200px;
+}
+.im-or img{
+    border-radius: 10px;
+    width: 90px;
+}
+.im-or{
+margin-left: 5px;
+margin-top: 50px;
+background-color: aliceblue;
+width:50px ;
+}
+.testing{
+    margin-top: 280px;
+    background-color: blue;
+    width: 200px;
+    height: 150px;
+}
+.or-disc{
+
+    background-color: red;
+    padding-top: 10px;
+    height: 150px;
+    width: 300px;
+    margin-top: 49px;
+    display: grid;
+    margin-left: 30px;
+    
+    
+}
+.or-discss{
+    display: grid;
+    grid-template-rows: auto;
+}
+.disc{
+    background-color: aliceblue;
+    width: 100px;
+    height: 20px;
+    margin-left: 90px;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 0px;
+}
+.det{
+    padding-top: 10px;
+    margin-top: 15px;
+    background-color: aqua;
+    width: 280px;
+    margin-left: 10px;
+    height: 100px;
+    padding-top: 0px;
+}
+.details{
+    display: flex;
+    padding-left: 10px;
+    background-color: aliceblue;
+    margin-top: 10px;
+    font-weight: bold;
+    
+}
+.test{
+    margin-left: 10px;
+    font-weight: lighter;
+}
+.side-child{
+
+    width: 100px;
+    height: 100%;
+    background-color: red;
+}
+.side-menu{
+    width:100%;
+    height: 2000px;
+    display: grid;
+    align-items: end;
+    justify-content: end;
+    position: relative;
+    z-index: 10000;
+    top: 70px;
+}
+.op{
+    display: none;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    position: relative;
+    width: 150px;
+    height: 200px;
+    background-color: red;
+    top: 2px;
+    border-radius: 10px;
+    opacity: 0;
+    transition: all 2s;
+}
+.pro-pic:hover .op{
+    opacity: 1;
+    display: flex;
+    transition: all2s;
+}
